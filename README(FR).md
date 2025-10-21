@@ -41,14 +41,14 @@ Apres avoir configurer les machines, on peut verifier l'addresse IP actuelle (``
 ```sh
 ip addr show
 ```     
-Et s'il y'a des conflits dus aux adresses IP identiques.
+Et s'il y'a des conflits dus aux adresses IP identiques. On change l'adresse d'une machine.
 Il faut savoir que Linux offre plusieurs méthodes pour configurer le réseau.
-Ici on peut changer l'addresse IP d'une par deux methodes:
+Ici on peut changer l'addresse IP par deux methodes:
 - Methode Static: on edite manuellement le fichier  /etc/network/interfaces:
 ```sh
 nano /etc/network/interfaces
 ```     
-Et modifie par et specifie l'adresse IP:     
+On specifie l'adresse IP:     
 
 ``` sh 
     auto enps03(interface name)
@@ -236,8 +236,6 @@ La **table de routage** contient les règles de routage d'un système.
 ```sh
 # Afficher la table de routage
 ip route show
-# ou
-route -n
 ```
 
 **Exemple de sortie** :
@@ -284,15 +282,6 @@ google.com (Domain)
   ↓
 www.google.com (Subdomain)
 ```
-
-### 5.3 Serveurs DNS
-
-**Types de serveurs** :
-1. **Serveur DNS Récursif** : Fait les recherches pour vous (ex: `8.8.8.8`)
-2. **Serveur DNS Autoritaire** : Possède les enregistrements officiels
-
-**DNS Publics Courants** :
-- Google : `8.8.8.8`, `8.8.4.4`
 
 ### Configuration DNS sous Linux
 
@@ -407,7 +396,7 @@ Une **interface réseau** est un point de connexion entre un ordinateur et un r�
 ### Nomenclature des Interfaces
 
 **Ancienne nomenclature** :
-- `enps03`, `eth1` : Ethernet
+- `eth0`, `eth1` : Ethernet
 - `wlan0` : WiFi
 - `lo` : Loopback
 
@@ -588,7 +577,7 @@ Ethernet : MAC source → MAC destination
 - VMs peuvent communiquer entre elles
 - Isolé de l'hôte et d'Internet
 - Nécessite un routeur/gateway pour accéder à Internet
-- Nom du réseau : `intnet1`, `intnet2`, etc.
+- Nom du réseau : `intnet`, `intnet1`, etc.
 
 
 ## Diagnostics et Dépannage Réseau

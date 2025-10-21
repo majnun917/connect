@@ -40,14 +40,14 @@ After configuring the machines, you can check the current IP address (``machine 
 ```sh
 ip addr show
 ```     
-And if there are conflicts due to identical IP addresses.
+And if there are conflicts due to identical IP addresses, we change the address of a machine.
 You should know that Linux offers several methods for configuring the network.
-Here you can change the IP address in one of two ways:
+Here we can change the IP address of two ways:
 -Static method: we manually edit the /etc/network/interfaces file:
 ```sh
 nano /etc/network/interfaces
 ```     
-And modifies by and specifies the IP address:     
+Specifies the IP address:     
 
 ``` sh 
     auto enps03(interface name)
