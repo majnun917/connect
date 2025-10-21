@@ -174,7 +174,7 @@ An **IP conflict**occurs when two devices have the same IP address on the same n
 -Security: Internal machines are hidden
 -Allows multiple devices to share a single public IP
 
-### 3.2 Types of NAT
+### Types of NAT
 
 **1. Static NAT**:
 -A private IP = A fixed public IP
@@ -189,7 +189,7 @@ An **IP conflict**occurs when two devices have the same IP address on the same n
 -Uses different port numbers
 -**This is what our box uses!**
 
-### 3.3 How NAT works in our Project
+### How NAT works in our Project
 
 ```
 machine2 (192.168.0.2) → Box → Internet (10.0.2.2) → Internet
@@ -280,7 +280,7 @@ google.com (Domain)
 www.google.com (Subdomain)
 ```
 
-### 5.3 DNS Servers
+### DNS Servers
 
 **Server types**:
 1. **Recursive DNS Server**: Does the searches for you (ex: `8.8.8.8`)
@@ -515,7 +515,7 @@ Practical model used on the Internet:
 | Internet | 3 | IP, ICMP, NAT |
 | Network access | 1, 2 | Ethernet, WiFi |
 
-### 9.3 Encapsulation des Données
+### Encapsulation des Données
 
 Quand vous envoyez des données, chaque couche ajoute son en-tête :
 
@@ -539,7 +539,7 @@ IP : Source=192.168.0.2, Dest=142.250.185.46
 ↓
 Ethernet : MAC source → MAC destination
 ```
-### 9.4 Protocols per Layer in our Project
+### Protocols per Layer in our Project
 
 **Layer 7 (Application)**:
 -DNS: Resolution of "google.com"
@@ -558,9 +558,9 @@ Ethernet : MAC source → MAC destination
 
 **Layer 1 (Physical)**:
 -Virtual in VirtualBox
-## 10. VirtualBox and Network Virtualization
+## VirtualBox and Network Virtualization
 
-### 10.1 VirtualBox Network Modes
+### VirtualBox Network Modes
 
 **1. NAT (Network Address Translation)**:
 -VM can access the Internet
