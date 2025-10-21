@@ -35,7 +35,7 @@ We start by listing the steps for configuring the VMs, then some commands which 
     -Here we just activated Adapter 1, choosing ``Internal Network`` and the same name for the box: ``intnet(ex)``
     -And press ``OK``.
 
-## Orders
+## The commands used
 After configuring the machines, you can check the current IP address (``machine 2``) by:
 ```sh
 ip addr show
@@ -233,8 +233,6 @@ The **routing table**contains the routing rules of a system.
 ```sh
 # Show routing table
 ip route show
-# Or
-road -n
 ```
 
 **Example output**:
